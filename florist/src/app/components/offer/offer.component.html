@@ -1,0 +1,20 @@
+<div class="container">
+  <mat-grid-list cols="2" class="grid-container" gutterSize="0px" rowHeight="fit" (window:resize)="onResize($event)">
+    <mat-grid-tile colspan="2" rowspan="1" class="header-tile">
+      <p class="header-p">Our Services</p>
+    </mat-grid-tile>
+    <mat-grid-tile *ngFor="let card of cards; let i = index" colspan="1" rowspan="4" class="grid-tile">
+      <mat-card class="custom-card">
+        <mat-card-header>
+          <mat-card-title class="card-content">
+            <i class="icons" [ngClass]="card.iconName"></i>
+            <p class="card-title">{{ card.title }}</p>
+          </mat-card-title>
+        </mat-card-header>
+        <div class="hover-content">
+          <p class="hover-text">{{ card.text }}</p>
+        </div>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

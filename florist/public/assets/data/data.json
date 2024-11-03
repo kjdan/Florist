@@ -1,0 +1,42 @@
+[
+  {
+      "title": "Custom Bouquet Design",
+      "iconName": "fa-brands fa-pagelines",
+      "text": "Unique flower arrangements tailored to suit any occasion."
+  },
+  {
+      "title": "Sympathy and Funeral Flowers",
+      "iconName": "fa-solid fa-ribbon",
+      "text": "Thoughtful floral designs to convey comfort and condolences."
+  },
+  {
+      "title": "Wedding Floral Arrangements",
+      "iconName": "fa-solid fa-ring",
+      "text": "Elegant bouquets that add charm and beauty to your wedding day."
+  },
+  {
+      "title": "Event Floral Decorations",
+      "iconName": "fa-solid fa-martini-glass-citrus",
+      "text": "Cheerful flower decorations perfect for birthdays and celebrations."
+  },
+  {
+      "title": "Indoor Plant Arrangements",
+      "iconName": "fa-solid fa-seedling",
+      "text": "Lovely plant arrangements to bring warmth and gratitude."
+  },
+  {
+      "title": "Flower Delivery Service",
+      "iconName": "fa-solid fa-box",
+      "text": "Fresh flower deliveries to brighten any day and occasion."
+  },
+  {
+      "title": "Floral Workshops and Classes",
+      "iconName": "fa-solid fa-lightbulb",
+      "text": "Learn floral artistry with our hands-on workshops and classes."
+  },
+  {
+      "title": "Flower Gift Packages",
+      "iconName": "fa-solid fa-gift",
+      "text": "Delightful floral gifts perfect for birthdays and special moments."
+  }
+]

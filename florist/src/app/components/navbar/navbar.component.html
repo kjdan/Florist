@@ -1,0 +1,29 @@
+<div class="overlay" *ngIf="sidebarOpened" (click)="toggleSidebar()"></div>
+
+<div class="sidebar" *ngIf="sidebarOpened">
+  <button (click)="toggleSidebar()" class="close-button"><i class="fa-solid fa-xmark"></i></button>
+  <p (click)="navigateToFragment($event, 'about')">About</p>
+  <p (click)="navigateToFragment($event, 'offer')">Services</p>
+  <p (click)="navigateToFragment($event, 'portfolio')">Our Work</p>
+  <p (click)="navigateToFragment($event, 'contact')">Contact</p>
+</div>
+
+<mat-grid-list cols="6" class="grid-container" gutterSize="10px" rowHeight="2:1">
+  <mat-grid-tile colspan="1" rowspan="1" class="navbar-text">
+    <button *ngIf="isMobile" (click)="toggleSidebar()" class="menu-button header-button">
+      <i class="fa-solid fa-bars menu-icon"></i>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1" class="navbar-text">
+    <span *ngIf="!isMobile" (click)="navigateToFragment($event, 'about')">ABOUT</span>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1" class="navbar-text">
+    <span *ngIf="!isMobile" (click)="navigateToFragment($event, 'offer')">SERVICES</span>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1" class="navbar-text">
+    <span *ngIf="!isMobile" (click)="navigateToFragment($event, 'portfolio')">OUR WORK</span>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1" class="navbar-text">
+    <span *ngIf="!isMobile" (click)="navigateToFragment($event, 'contact')">CONTACT</span>
+  </mat-grid-tile>
+</mat-grid-list>

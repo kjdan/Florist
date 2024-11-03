@@ -1,0 +1,36 @@
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background-color: #DDCECE;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0.8;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+.back-to-top:focus,
+.back-to-top:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

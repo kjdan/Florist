@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+
+<section id="hero">
+  <app-hero></app-hero>
+</section>
+<section id="about">
+  <app-about></app-about>
+</section>
+<section id="offer">
+  <app-offer></app-offer>
+</section>
+<section id="portfolio">
+  <app-portfolio></app-portfolio>
+</section>
+<section id="contact">
+  <app-contact></app-contact>
+</section>
+
+<app-footer></app-footer>
+
+<button class="back-to-top" (click)="scrollToTop()" *ngIf="isScrolled">
+  <img src="assets/icons/arrowBlack.png" alt="Menu Icon" class="menu-icon" />
+</button>

@@ -1,0 +1,69 @@
+.grid-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.custom-input {
+  font-family: 'SS4', sans-serif;
+  background-color: #DDCECE;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1em;
+  color: #000000;
+  width: 100%;
+  box-sizing: border-box;
+  place-self: end;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.custom-textarea {
+  font-family: 'SS4', sans-serif;
+  background-color: #DDCECE;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1em;
+  color: #000000;
+  width: 100%;
+  height: 80%;
+  min-height: 100px;
+  max-height: 600px;
+  max-width: 800px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.custom-input::placeholder,
+.custom-textarea::placeholder {
+  color: #000000;
+  opacity: 0.7;
+}
+
+.custom-button {
+  width: 40%;
+  height: 30%;
+  min-width: 200px;
+  max-width: 400px;
+  background-color: #53807A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.custom-button:hover {
+  background-color: #43695E;
+}
+
+.custom-input:focus,
+.custom-textarea:focus {
+  outline: none;
+  box-shadow: none;
+}

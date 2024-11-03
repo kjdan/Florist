@@ -1,0 +1,39 @@
+<div class="container">
+  <mat-grid-list cols="3" class="grid-container" gutterSize="15px" rowHeight="fit">
+    <mat-grid-tile colspan="3" rowspan="1"><p class="header-p">Our Work</p></mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2"><p class="big-text">575</p></mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2"><p class="big-text">30</p></mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2"><p class="big-text">125</p></mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2"><p class="custom-text">collected bouquets</p></mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2"><p class="custom-text">decorated venues</p></mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2"><p class="custom-text">wedding bouquets</p></mat-grid-tile>
+    <mat-grid-tile colspan="3" rowspan="3">
+      <div class="banner-container">
+        <div class="banner">
+          <img src="assets/images/bouquet1.jpg" alt="Image 1" class="full-grid-image" />
+          <img src="assets/images/bouquet2.jpg" alt="Image 2" class="full-grid-image" />
+          <img src="assets/images/bouquet3.jpg" alt="Image 3" class="full-grid-image" />
+          <img src="assets/images/bouquet4.jpg" alt="Image 4" class="full-grid-image" />
+          <img src="assets/images/bouquet5.jpg" alt="Image 1" class="full-grid-image" />
+          <img src="assets/images/bouquet6.jpg" alt="Image 2" class="full-grid-image" />
+          <img src="assets/images/bouquet7.jpg" alt="Image 3" class="full-grid-image" />
+          <img src="assets/images/bouquet8.jpg" alt="Image 4" class="full-grid-image" />
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="3" rowspan="1"></mat-grid-tile>
+    <mat-grid-tile colspan="3" rowspan="2">
+      <div class="card">
+        <p>{{ visibleCards[0]?.text }}</p>
+        <p class="card-name">{{ visibleCards[0]?.name }}</p>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="3" rowspan="1">
+      <div class="buttons-container">
+        <button (click)="setPage(currentPage - 1)" [disabled]="currentPage === 0"></button>
+        <button (click)="setPage(currentPage + 1)" [disabled]="currentPage >= getTotalPages() - 1"></button>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

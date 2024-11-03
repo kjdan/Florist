@@ -1,0 +1,23 @@
+<div class="container">
+  <mat-grid-list class="grid-container" cols="1" rowHeight="fit" gutterSize="10px">
+    
+    <mat-grid-tile rowspan="1">
+      <p class="header-p">Contact Us</p>
+    </mat-grid-tile>
+
+    <form class="contact-form" (submit)="sendEmail($event)">
+      <mat-grid-tile rowspan="1">
+        <input matInput type="email" id="user_email" name="user_email" placeholder="Enter your email" required class="custom-input">
+      </mat-grid-tile>
+
+      <mat-grid-tile rowspan="2">
+        <textarea matInput id="message" name="message" placeholder="Type your message here" required class="custom-textarea"></textarea>
+      </mat-grid-tile>
+
+      <mat-grid-tile rowspan="1">
+        <button mat-raised-button type="submit" class="custom-button">Send</button>
+      </mat-grid-tile>
+      
+    </form>
+  </mat-grid-list>
+</div>
